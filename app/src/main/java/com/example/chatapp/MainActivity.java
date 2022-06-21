@@ -13,6 +13,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Button LgnBtn =findViewById(R.id.LgnBtn);
+        LgnBtn.setOnClickListener(v -> {
+            Intent i = new Intent(this, Contacts.class);
+            startActivity(i);
+        });
         Button RegBtn = findViewById(R.id.RegBtn);
         RegBtn.setOnClickListener(v -> {
            Intent i = new Intent(this, Register.class);

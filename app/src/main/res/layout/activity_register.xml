@@ -33,7 +33,8 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:text="Register"
-            android:textSize="30sp" />
+            android:textSize="30sp"
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/username"
@@ -100,7 +101,11 @@
                 android:id="@+id/BSelectImage"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="SELECT PROFILE PICTURE" />
+                android:backgroundTint="@color/purple_500"
+                android:text="SELECT PROFILE PICTURE"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar" />
         </LinearLayout>
 
         <LinearLayout
@@ -116,14 +121,22 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="5dp"
-                android:text="Register" />
+                android:backgroundTint="@color/purple_500"
+                android:text="Register"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar" />
 
             <Button
                 android:id="@+id/LgnBtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="5dp"
-                android:text="Back to Sign in" />
+                android:backgroundTint="@color/purple_500"
+                android:text="Back to Sign in"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar" />
         </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

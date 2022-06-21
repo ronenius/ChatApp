@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".Settings">
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -31,54 +31,80 @@
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="40dp"
-            android:text="Welcome"
+            android:layout_marginBottom="20dp"
+            android:text="Settings"
             android:textSize="30sp"
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/username"
+            android:id="@+id/newNick"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Username"
+            android:hint="New Nickname"
             android:inputType="textPersonName" />
 
         <EditText
-            android:id="@+id/password"
+            android:id="@+id/newServer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Password"
-            android:inputType="textPassword" />
+            android:hint="New Server"
+            android:inputType="textPersonName" />
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/ChangedImageView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="16dp"
+                app:cardCornerRadius="250dp">
+
+                <ImageView
+                    android:id="@+id/PreviewChangedImage"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:contentDescription="Profile_Picture"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/contactpicture" />
+
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/ChangeProfilePic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/purple_500"
+                android:text="SELECT PROFILE PICTURE"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="105dp"
+            android:layout_height="63dp"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="30dp"
             android:gravity="center"
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/LgnBtn"
+                android:id="@+id/addCont"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="5dp"
                 android:backgroundTint="@color/purple_500"
-                android:text="Sign in"
+                android:text="Apply"
                 android:textColor="@color/white"
-                android:textStyle="bold"
-                android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar" />
-
-            <Button
-                android:id="@+id/RegBtn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="5dp"
-                android:backgroundTint="@color/purple_500"
-                android:text="Register"
-                android:textColor="@color/white"
+                android:textSize="20sp"
                 android:textStyle="bold"
                 android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar" />
         </LinearLayout>
