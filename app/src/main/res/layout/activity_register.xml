@@ -9,12 +9,11 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
+        android:background="#F0F8FF"
         android:gravity="center"
         android:orientation="vertical"
-        android:paddingBottom="20dp"
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
-        android:background="#F0F8FF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,32 +23,85 @@
             android:id="@+id/imageView"
             android:layout_width="90dp"
             android:layout_height="90dp"
-            android:layout_marginBottom="20dp"
+            android:layout_marginBottom="10dp"
+            android:contentDescription="logo"
             app:srcCompat="@drawable/logo" />
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="40dp"
-            android:textSize="30dp"
-            android:text="Welcome" />
+            android:layout_marginBottom="10dp"
+            android:text="Register"
+            android:textSize="30sp" />
 
         <EditText
             android:id="@+id/username"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:autofillHints="username"
             android:ems="10"
             android:hint="Username"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autofillHints="name"
+            android:ems="10"
+            android:hint="Nickname"
             android:inputType="textPersonName" />
 
         <EditText
             android:id="@+id/password"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:autofillHints="password"
             android:ems="10"
             android:hint="Password"
-            android:inputType="textPersonName" />
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/confirmPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autofillHints="password"
+            android:ems="10"
+            android:hint="Confirm Password"
+            android:inputType="textPassword" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/ImageView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="16dp"
+                app:cardCornerRadius="250dp">
+
+                <ImageView
+                    android:id="@+id/PreviewImage"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:contentDescription="Profile_Picture"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/contactpicture" />
+
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/BSelectImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SELECT PROFILE PICTURE" />
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -60,18 +112,18 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/LgnBtn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="5dp"
-                android:text="Sign in" />
-
-            <Button
                 android:id="@+id/RegBtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
+                android:layout_marginEnd="5dp"
                 android:text="Register" />
+
+            <Button
+                android:id="@+id/LgnBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="Back to Sign in" />
         </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
