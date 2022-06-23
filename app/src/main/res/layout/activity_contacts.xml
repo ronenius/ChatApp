@@ -24,7 +24,7 @@
             android:orientation="horizontal">
 
             <ImageView
-                android:id="@+id/addContactButton"
+                android:id="@+id/returnToContacts"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:clickable="true"
@@ -49,7 +49,7 @@
                     android:inputType="textPersonName" />
 
                 <ImageView
-                    android:id="@+id/imageView4"
+                    android:id="@+id/searchContactButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:clickable="true"

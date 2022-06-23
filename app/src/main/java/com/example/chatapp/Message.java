@@ -4,7 +4,7 @@ import java.util.Date;
 
 public class Message {
     private String content;
-    private Date date;
+    private Date date = new Date();
     private boolean sent;
 
     public Message(String content, boolean sent) {

@@ -1,13 +1,13 @@
 package com.example.chatapp;
 
 public class CurrentContact {
-    private static Contact currentUser = null;
+    private static Contact currentContact = null;
 
-    public static void setCurrentUser(Contact currentUser) {
-        CurrentContact.currentUser = currentUser;
+    public static void setCurrentContact(Contact currentUser) {
+        CurrentContact.currentContact = currentUser;
     }
 
-    public static Contact getCurrentUser() {
-        return currentUser;
+    public static Contact getCurrentContact() {
+        return currentContact;
     }
 }

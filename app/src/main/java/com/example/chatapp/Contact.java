@@ -6,8 +6,8 @@ import java.util.Date;
 public class Contact {
     private String username;
     private String nickname;
-    private String lastMessage;
-    private Date lastDate;
+    private String lastMessage = "hello world ho";
+    private Date lastDate = new Date();
     private String server;
 
     public Contact(String username, String nickname) {
